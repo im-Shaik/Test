@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <title>Splide slide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <h1>splider-slide</h1>
+    </div>
+    <div class="splide-wrapper">
+      <div class="splide">
+        <!-- HTML code for the slider goes here -->
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNob2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNob2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="splide__slide">
+              <div class="img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        autoplay: true,
+        snap: true,
+        drag: "free",
+        perPage: 4,
+        perMove: 3,
+        padding: "10px",
+        gap: "20px",
+        focus: "center",
+        breakpoints: {
+          828: {
+            innerWidth: "100%",
+            perPage: 3,
+            perMove: 2,
+            gap: "20px",
+          },
+          628: {
+            innerWidth: "100%",
+            perPage: 3,
+            perMove: 3,
+            gap: "20px",
+          },
+          560: {
+            innerWidth: "100%",
+            perPage: 2,
+            perMove: 2,
+            gap: "20px",
+          },
+
+          480: {
+            innerHeight: "100%",
+            innerWidth: "100%",
+            perPage: 1,
+            perMove: 1,
+            gap: "15px",
+          },
+        },
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>

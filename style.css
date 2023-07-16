@@ -1,0 +1,38 @@
+body {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-box {
+  height: 200px;
+  /* width: 250px; */
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.splide-wrapper {
+  background-color: gray;
+  padding: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  .splide-wrapper .splide {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .splide-wrapper .splide-track {
+    padding: 0 !important;
+  }
+}
